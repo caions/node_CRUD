@@ -12,7 +12,7 @@ const usuario = sequelize.define('usuarios',{
     nome:{
         type: Sequelize.STRING,
         validate:{
-            noEmpty: true
+            notEmpty: true
         }
     },
     matricula:{

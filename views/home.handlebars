@@ -1,1 +1,13 @@
 <h1>Pagina Principal</h1>
+
+<a href="/cad"><button>Cadastrar</button></a>
+<a href="/edit"><button>Editar</button></a>
+
+{{#each posts}}
+<p>Id: {{id}}</p>
+<p>Nome: {{nome}}</p>
+<p>Matricula: {{matricula}}</p>
+<p>Criado em: {{createdAt}}</p>
+<a href="/delete/{{id}}"><button>Deletar</button></a>
+<hr>
+{{/each}}
